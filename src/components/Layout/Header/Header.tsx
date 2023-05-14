@@ -1,3 +1,4 @@
+import ThemeSwitcher from "@/components/ThemeSwitcher"
 import { HEADER_LINKS } from "@/config/links"
 import Link from "next/link"
 
@@ -17,12 +18,13 @@ const Header = () => {
             <Link
               key="tags"
               href={link.href}
-              className="p-1 font-medium text-gray-900 sm:p-4"
+              className="p-1 font-medium sm:p-4"
             >
               {link.title}
             </Link>
           ))}
         </div>
+        <ThemeSwitcher />
       </div>
     </header>
   )
