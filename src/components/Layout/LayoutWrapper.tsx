@@ -1,7 +1,7 @@
 import { WithChildren } from '@/types/common'
 import React from 'react'
-import Header from './Header/Header'
-import Footer from './Footer/Footer'
+import Header from './Header'
+import Footer from './Footer'
 
 const LayoutWrapper = (props: WithChildren) => {
   const { children } = props

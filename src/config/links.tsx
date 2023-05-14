@@ -16,6 +16,6 @@ export const HEADER_LINKS: HeaderLink = [
   },
   {
     title: "About",
-    href: "/"
+    href: "/about"
   }
 ]
