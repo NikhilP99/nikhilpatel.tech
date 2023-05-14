@@ -78,7 +78,7 @@ const AboutContent = () => {
   )
 }
 
-const Experience () => {
+const Experience = () => {
   return (
     <div className="mt-10">
       <div className="space-y-2 pt-6 pb-8 md:space-y-5">
