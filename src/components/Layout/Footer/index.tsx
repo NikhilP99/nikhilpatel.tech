@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="flex flex-row items-center text-sm space-x-4 py-2">
             {FOOTER_LINKS.map((link) => {
               const Icon = link.icon
-              return <Link href={link.href}> <Icon size={16} /> </Link>
+              return <Link key={link.href} href={link.href}> <Icon size={16} /> </Link>
             })}
           </div>
         </div>
