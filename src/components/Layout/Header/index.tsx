@@ -1,6 +1,6 @@
 import ThemeSwitcher from "@/components/ThemeSwitcher"
 import { HEADER_LINKS } from "@/config/links"
-import Link from "next/link"
+import Link from "@/components/Link"
 
 const Header = () => {
   return (
