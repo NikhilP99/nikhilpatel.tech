@@ -7,8 +7,8 @@ const Header = () => {
     <header className="flex flex-row justify-between py-8">
       <Link href="/" aria-label="Nikhil Patel">
         <div className="flex items-center justify-between">
-          <div className="hidden h-6 text-2xl font-semibold sm:block">
-            Nikhil Patel
+          <div className="hidden font-russo h-6 text-2xl font-semibold sm:block">
+            NP
           </div>
         </div>
       </Link>

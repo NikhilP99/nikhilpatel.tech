@@ -10,7 +10,8 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-poppins)'],
-        mono: ['var(--font-roboto-mono)']
+        mono: ['var(--font-roboto-mono)'],
+        russo: ['var(--font-russo-one)']
       }
     },
   },
