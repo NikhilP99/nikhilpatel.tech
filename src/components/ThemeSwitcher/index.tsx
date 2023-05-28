@@ -4,7 +4,7 @@ import { useTheme } from 'next-themes'
 
 const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme, resolvedTheme } = useTheme()
+  const { theme, resolvedTheme, setTheme } = useTheme()
 
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), [])
@@ -20,7 +20,7 @@ const ThemeSwitcher = () => {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
         fill="currentColor"
-        className="text-gray-900 dark:text-gray-100"
+        className="text-type-primary"
       >
         {mounted && (theme === 'dark' || resolvedTheme === 'dark') ? (
           <path

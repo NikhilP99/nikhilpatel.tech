@@ -32,7 +32,7 @@ export default function RootLayout(props: WithChildren) {
   return (
     <html lang="en" className={`${poppins.variable} ${roboto_mono.variable} ${russo_one.variable}`}>
       <body>
-        <ThemeProvider attribute="class" defaultTheme='system' enableSystem>
+        <ThemeProvider defaultTheme='dark'>
           <LayoutWrapper>
             {children}
           </LayoutWrapper>

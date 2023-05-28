@@ -5,15 +5,15 @@ import Link from 'next/link'
 const About = () => {
   return (
     <main className='flex-1'>
-      <div className='divide-y-2 divide-gray-100 dark:divide-gray-700'>
+      <div className='divide-y-2 divide-background-secondary'>
         <div className="pt-6 pb-8">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-type-primary sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Hello! 
           </h1>
         </div>
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <AuthorCard />
-          <div className="prose max-w-none pt-8 pb-8 dark:prose-invert xl:col-span-2">
+          <div className="prose max-w-none pt-8 pb-8 text-type-secondary xl:col-span-2">
             <AboutContent />
           </div>
         </div>
@@ -33,12 +33,12 @@ const AuthorCard = () => {
         height={192}
         className="h-48 w-48 rounded-full"
       />
-      <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
+      <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight text-type-primary">
         Nikhil Patel
       </h3>
-      <div className="text-gray-500 dark:text-gray-400">SDE</div>
-      <div className="text-gray-500 dark:text-gray-400">JIO</div>
-      <div className="flex space-x-3 pt-6">
+      <div className="text-type-secondary">SDE</div>
+      <div className="text-type-secondary">JIO</div>
+      <div className="flex space-x-3 pt-6 text-type-secondary">
         <Link href="/"> Email </Link>
         <Link href="/"> Github </Link>
         <Link href="/"> Twitter </Link>
@@ -82,7 +82,7 @@ const Experience = () => {
   return (
     <div className="mt-10">
       <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-        <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+        <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-type-primary sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
           Experience
         </h1>
       </div>

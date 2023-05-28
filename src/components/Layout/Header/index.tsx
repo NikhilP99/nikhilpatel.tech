@@ -7,7 +7,7 @@ const Header = () => {
     <header className="flex flex-row justify-between py-8">
       <Link href="/" aria-label="Nikhil Patel">
         <div className="flex items-center justify-between">
-          <div className="hidden font-russo h-6 text-2xl font-semibold sm:block">
+          <div className="hidden font-russo h-6 text-2xl font-semibold sm:block text-accent-medium">
             NP
           </div>
         </div>
@@ -18,7 +18,7 @@ const Header = () => {
             <Link
               key="tags"
               href={link.href}
-              className="p-1 font-medium sm:p-4"
+              className="p-1 font-medium sm:p-4 text-type-primary"
             >
               {link.title}
             </Link>

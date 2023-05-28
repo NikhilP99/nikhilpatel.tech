@@ -6,26 +6,24 @@ body * {
   @apply transition-colors duration-700;
 }
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+[data-theme="dark"] {
+  --background: #1c1b22;
+  --background-secondary: theme(colors.gray.700);
+  --accent-light: theme(colors.blue.300);
+  --accent-medium: theme(colors.blue.500);
+  --accent-dark: theme(colors.blue.600);
+  --type-primary: theme(colors.gray.100);
+  --type-secondary: theme(colors.gray.400);
+  --type-tertiary: theme(colors.gray.400);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+[data-theme="light"] {
+  --background: #ffffff;
+  --background-secondary: theme(colors.gray.200);
+  --accent-light: theme(colors.blue.300);
+  --accent-medium: theme(colors.blue.500);
+  --accent-dark: theme(colors.blue.600);
+  --type-primary: theme(colors.gray.900);
+  --type-secondary: theme(colors.gray.600);
+  --type-tertiary: theme(colors.gray.600);
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
