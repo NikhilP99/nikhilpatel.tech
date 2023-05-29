@@ -1,5 +1,5 @@
-import Link from "@/components/Link"
 import { FOOTER_LINKS } from "@/config/links"
+import FooterLink from "./FooterLink"
 
 const Footer = () => {
   return (
@@ -12,11 +12,8 @@ const Footer = () => {
             <div>Nikhil Patel</div>
             <div>{`© ${new Date().getFullYear()}`}</div>
           </div>
-          <div className="flex flex-row items-center text-sm space-x-4 py-2 text-type-secondary">
-            {FOOTER_LINKS.map((link) => {
-              const Icon = link.icon
-              return <Link key={link.href} href={link.href}> <Icon size={16} /> </Link>
-            })}
+          <div className="flex flex-row items-center text-sm space-x-4 py-2">
+            {FOOTER_LINKS.map((link, i) => <FooterLink href={link.href} Icon={link.icon} key={i} />)}
           </div>
         </div>
       </div>

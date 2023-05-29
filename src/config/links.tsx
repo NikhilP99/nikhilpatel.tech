@@ -3,12 +3,12 @@ import { IconType } from "react-icons"
 import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 import { SiGmail } from 'react-icons/si'
 
-type HeaderLink = {
+type HeaderLinkArray = {
   href: Route | URL
   title: string
 }[]
 
-export const HEADER_LINKS: HeaderLink = [
+export const HEADER_LINKS: HeaderLinkArray = [
   {
     title: "Blog",
     href: "/"
@@ -23,12 +23,12 @@ export const HEADER_LINKS: HeaderLink = [
   }
 ]
 
-type FooterLink = {
+type FooterLinkArray = {
   href: Route | URL
   icon: IconType
 }[]
 
-export const FOOTER_LINKS: FooterLink = [
+export const FOOTER_LINKS: FooterLinkArray = [
   {
     href: "/",
     icon: FiGithub

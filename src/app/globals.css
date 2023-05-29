@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  html * {
+  html {
     @apply bg-background transition-colors duration-700;
   }
 }
